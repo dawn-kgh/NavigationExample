@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     tools:context=".ui.other.MoreCat1Fragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <android.support.v7.widget.AppCompatImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
