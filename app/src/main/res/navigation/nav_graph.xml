@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.seroo.gyooha.navigationexample.ui.main.MainFragment"
+        android:label="main_fragment"
+        app:defaultNavHost="true"
+        tools:layout="@layout/fragment_main">
+
+        <deepLink app:uri="test://mains/home" />
+        <action
+            android:id="@+id/action_mainFragment_to_destination3Fragment"
+            app:destination="@id/moreCat2Fragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_destination2Fragment"
+            app:destination="@id/moreCat1Fragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/moreCat2Fragment"
+        android:name="com.seroo.gyooha.navigationexample.ui.other.MoreCat2Fragment"
+        android:label="fragment_destination3"
+        tools:layout="@layout/fragment_more_cat2" />
+    <fragment
+        android:id="@+id/moreCat1Fragment"
+        android:name="com.seroo.gyooha.navigationexample.ui.other.MoreCat1Fragment"
+        android:label="fragment_destination2"
+        tools:layout="@layout/fragment_more_cat1" />
+    <fragment
+        android:id="@+id/moreDetailFragment"
+        android:name="com.seroo.gyooha.navigationexample.ui.other.MoreDetailFragment"
+        android:label="fragment_more_detail"
+        tools:layout="@layout/fragment_more_detail">
+        <action
+            android:id="@+id/action_moreDetailFragment_to_deepDetailFragment"
+            app:destination="@id/deepDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/deepDetailFragment"
+        android:name="com.seroo.gyooha.navigationexample.ui.other.DeepDetailFragment"
+        android:label="fragment_deep_detail"
+        tools:layout="@layout/fragment_deep_detail" />
+
+    <fragment
+        android:id="@+id/mainTab2Fragment"
+        android:name="com.seroo.gyooha.navigationexample.ui.other.MainTab2Fragment"
+        android:label="fragment_sub1_main"
+        tools:layout="@layout/fragment_main_tab2">
+        <deepLink app:uri="test://mains/sub1" />
+        <action
+            android:id="@+id/action_sub1MainFragment_to_destination2Fragment"
+            app:destination="@id/moreCat1Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mainTab3Fragment"
+        android:name="com.seroo.gyooha.navigationexample.ui.other.MainTab3Fragment"
+        android:label="fragment_sub2_main"
+        tools:layout="@layout/fragment_main_tab3">
+        <deepLink app:uri="test://mains/sub2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.seroo.gyooha.navigationexample.ui.detail.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail">
+        <deepLink app:uri="test://detail/etc" />
+        <action
+            android:id="@+id/action_detailFragment_to_deepDetailFragment"
+            app:destination="@id/deepDetailFragment" />
+        <action
+            android:id="@+id/action_detailFragment_to_deepDetailFragment2"
+            app:destination="@id/deepDetailFragment" />
+    </fragment>
+
+</navigation>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/detailTab1Fragment">
+
+    <fragment
+        android:id="@+id/detailTab1Fragment"
+        android:name="com.seroo.gyooha.navigationexample.ui.other.DetailTab1Fragment"
+        android:label="fragment_etc0"
+        tools:layout="@layout/fragment_detail_tab1">
+
+       <deepLink app:uri="etc"/>
+    </fragment>
+    <fragment
+        android:id="@+id/detailTab2Fragment"
+        android:name="com.seroo.gyooha.navigationexample.ui.other.DetailTab2Fragment"
+        android:label="fragment_etc1"
+        tools:layout="@layout/fragment_detail_tab2" ><deepLink app:uri="test://etc1"/></fragment>
+    <fragment
+        android:id="@+id/detailTab3Fragment"
+        android:name="com.seroo.gyooha.navigationexample.ui.other.DetailTab3Fragment"
+        android:label="fragment_etc2"
+        tools:layout="@layout/fragment_detail_tab3" ><deepLink app:uri="test://etc2"/></fragment>
+</navigation>

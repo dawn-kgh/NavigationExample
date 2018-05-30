@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@id/mainFragment"
+        android:title="home"/>
+
+    <item android:id="@id/mainTab2Fragment"
+        android:title="other1"/>
+
+    <item android:id="@id/mainTab3Fragment"
+        android:title="other2"/>
+</menu>

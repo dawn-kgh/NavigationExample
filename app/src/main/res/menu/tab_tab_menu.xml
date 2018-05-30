@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@id/detailTab1Fragment"
+        android:title="etc0"/>
+
+    <item android:id="@id/detailTab2Fragment"
+        android:title="etc1"/>
+
+    <item android:id="@id/detailTab3Fragment"
+        android:title="etc2"/>
+</menu>
