@@ -46,7 +46,11 @@
         android:id="@+id/deepDetailFragment"
         android:name="com.seroo.gyooha.navigationexample.ui.other.DeepDetailFragment"
         android:label="fragment_deep_detail"
-        tools:layout="@layout/fragment_deep_detail" />
+        tools:layout="@layout/fragment_deep_detail" >
+        <action
+            android:id="@+id/action_deepDetailFragment_to_detailActivity"
+            app:destination="@id/detailActivity" />
+    </fragment>
 
     <fragment
         android:id="@+id/mainTab2Fragment"
@@ -54,9 +58,6 @@
         android:label="fragment_sub1_main"
         tools:layout="@layout/fragment_main_tab2">
         <deepLink app:uri="test://mains/sub1" />
-        <action
-            android:id="@+id/action_sub1MainFragment_to_destination2Fragment"
-            app:destination="@id/moreCat1Fragment" />
     </fragment>
 
     <fragment
@@ -74,11 +75,21 @@
         tools:layout="@layout/fragment_detail">
         <deepLink app:uri="test://detail/etc" />
         <action
-            android:id="@+id/action_detailFragment_to_deepDetailFragment"
-            app:destination="@id/deepDetailFragment" />
-        <action
-            android:id="@+id/action_detailFragment_to_deepDetailFragment2"
-            app:destination="@id/deepDetailFragment" />
+            android:id="@+id/action_detailFragment_to_moreDetailFragment"
+            app:destination="@id/moreDetailFragment" />
     </fragment>
+    <activity
+        android:id="@+id/detailActivity"
+        android:name="com.seroo.gyooha.navigationexample.DetailActivity"
+        android:label="DetailActivity">
+        <action
+            android:id="@+id/action_detailActivity_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </activity>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.seroo.gyooha.navigationexample.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
 
 </navigation>

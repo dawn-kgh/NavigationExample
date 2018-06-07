@@ -19,6 +19,8 @@
             <nav-graph android:value="@navigation/nav_graph" />
             <nav-graph android:value="@navigation/tab_tab" />
         </activity>
+
+        <activity android:name=".DetailActivity"/>
     </application>
 
 </manifest>

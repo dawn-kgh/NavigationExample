@@ -15,6 +15,6 @@
         android:id="@+id/btn_detail_tab1_fragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="deepMoreCat"/>
+        android:text="Make Error Button"/>
 
 </LinearLayout>

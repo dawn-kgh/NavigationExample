@@ -15,6 +15,6 @@
         android:id="@+id/btn_deep_detail_fragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="deepDeepMoreCat"/>
+        android:text="Next Activity"/>
 
 </LinearLayout>

@@ -9,7 +9,6 @@ import androidx.navigation.Navigation
 import com.seroo.gyooha.navigationexample.R
 import kotlinx.android.synthetic.main.fragment_deep_detail.*
 
-
 class DeepDetailFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater,
         container: ViewGroup?,
@@ -18,6 +17,6 @@ class DeepDetailFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        btn_deep_detail_fragment.setOnClickListener { Navigation.findNavController(it).navigate(R.id.moreDetailFragment, null) }
+        btn_deep_detail_fragment.setOnClickListener { Navigation.findNavController(it).navigate(R.id.detailActivity) }
     }
 }
