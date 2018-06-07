@@ -1,4 +1,4 @@
 # NavigationExample
 
 #### 개요
-  Google I/O 2018 네비게이션 아키텍쳐 컴포넌트 예제입니다.
+    Google I/O 2018에서 발표된 WorkManager 예제 입니다.
